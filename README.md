@@ -21,6 +21,22 @@ In the following examples, we show how we can easily exploit the semantic-segmen
 [![Everything Is AWESOME](https://img.youtube.com/vi/MHshzIIcirU/0.jpg)](https://www.youtube.com/watch?v=MHshzIIcirU "Everything Is AWESOME")
 
 
+# Citation
+
+`
+@misc{cortinhal2021semanticsaware,
+      title={Semantics-aware Multi-modal Domain Translation:From LiDAR Point Clouds to Panoramic Color Images}, 
+      author={Tiago Cortinhal and Fatih Kurnaz and Eren Aksoy},
+      year={2021},
+      eprint={2106.13974},
+      archivePrefix={arXiv},
+      primaryClass={cs.CV}
+}
+`
+
+# Checkout our previous work
+
+You can check out previous work SalsaNext ![git](https://github.com/Halmstad-University/SalsaNext) and ![paper](https://arxiv.org/abs/2003.03653)!
 
 # Disclamer
 
