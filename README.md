@@ -41,11 +41,10 @@ See how easily we can use semantic segmentation maps for data augmentation in da
 If you use **TITAN-Net** in your research, please consider citing our paper:
 
 ```bibtex
-@misc{cortinhal2021semanticsaware,
-  title={Semantics-aware Multi-modal Domain Translation: From LiDAR Point Clouds to Panoramic Color Images}, 
-  author={Tiago Cortinhal and Fatih Kurnaz and Eren Aksoy},
-  year={2021},
-  eprint={2106.13974},
-  archivePrefix={arXiv},
-  primaryClass={cs.CV}
+@inproceedings{cortinhal2021semanticsaware,
+  title={Semantics-Aware Multi-Modal Domain Translation: From LiDAR Point Clouds to Panoramic Color Images},
+  author={Cortinhal, Tiago and Kurnaz, Fatih and Aksoy, Eren Erdal},
+  booktitle={Proceedings of the IEEE/CVF International Conference on Computer Vision (ICCV) Workshops},
+  pages={3747-3756},
+  year={2021}
 }
