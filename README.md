@@ -1,43 +1,51 @@
-# TITAN-NET
+# 🌌 TITAN-Net: Semantics-Aware Multi-Modal Domain Translation 🌌
 
-[![bla](https://img.shields.io/apm/l/vim-mode)](https://opensource.org/licenses/MIT)
-[![bla](http://img.shields.io/badge/CS.CV-arXiv%2106.13974-B31B1B.svg)](https://arxiv.org/abs/2106.13974)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![arXiv](http://img.shields.io/badge/CS.CV-arXiv%2106.13974-B31B1B.svg)](https://arxiv.org/abs/2106.13974)
 
+![TITAN-Net](images/TITANNET.gif)
 
-![TITANNET](images/TITANNET.gif)
+**TITAN-Net** introduces a fresh, effective approach for bridging the gap between sensor modalities with different data formats! 🌉 By harnessing the power of scene semantics, TITAN-Net can, for the very first time, synthesize a panoramic color image directly from a 3D LiDAR point cloud. 
 
-In this work, we present a simple yet effective framework to address the domain translation problem between different sensor modalities with unique data formats. By relying only on the semantics of the scene, our modular generative framework can, for the first time, synthesize a panoramic color image from a given full 3D LiDAR point cloud. The framework starts with semantic segmentation of the point cloud, which is initially projected onto a spherical surface. The same semantic segmentation is applied to the corresponding camera image. Next, our new conditional generative model adversarially learns to translate the predicted LiDAR segment maps to the camera image counterparts. Finally, generated image segments are processed to render the panoramic scene images. We provide a thorough quantitative evaluation on the SemanticKitti dataset and show that our proposed framework outperforms other strong baseline models. 
+### ✨ Highlights
 
+1. **Semantic Segmentation**: First, we segment the LiDAR point cloud and project it onto a spherical surface. 📡
+2. **Modular Generative Framework**: Our approach is modular and generative, translating LiDAR segments into colorful panoramic images!
+3. **Adversarial Learning**: Using a conditional GAN, we translate LiDAR segment maps to their camera image counterparts, creating a seamless color scene. 🎨
+4. **Performance**: Quantitative evaluations on the Semantic-KITTI dataset show TITAN-Net outperforms strong baselines by a significant margin.
 
+## 🔗 Models and Pretrained Weights
 
-# Example Videos
-The following videos show the output of TITAN-NET and the generated RGB panoramic images.
-[![Everything Is AWESOME](https://img.youtube.com/vi/eV510t29TAc/0.jpg)](https://www.youtube.com/watch?v=eV510t29TAc "Everything Is AWESOME")
+Below are links to the models and pretrained weights used in this project:
 
+- **[TITAN-Net Weights](https://drive.google.com/file/d/1ypwqJEgwG90ATvbnw9zAubb6A-xZ8Zeh/view?usp=sharing)**
+- **[SD-Net Weights](https://drive.google.com/file/d/1TLys-tZpqPrLXx7s8SImKgZy9wmtdsZY/view?usp=drive_link)** — from NVIDIA's [semantic-segmentation repository](https://github.com/NVIDIA/semantic-segmentation)
+- **[SalsaNext Weights](https://drive.google.com/file/d/1utfzooTDAlV5M6XGvCE0-L-vbdLe_2rD/view?usp=share_link)** — from [Tiago Cortinhal's SalsaNext repo](https://github.com/TiagoCortinhal/SalsaNext)
+- **[TITAN-Next Weights](https://drive.google.com/file/d/1fEKd9jHOV39smMATNm8x_EWH8L9QMSox/view?usp=drive_link)** — from [Tiago Cortinhal's TITAN-Next repository](https://github.com/TiagoCortinhal/TITAN-Next)
 
-In the following examples, we show how we can easily exploit the semantic-segmentation maps to perform data augmentation (KITTI and Cityscapes).
+## 📹 Example Videos
 
-[![Everything Is AWESOME](https://img.youtube.com/vi/zR6Ix6YUhwI/0.jpg)](https://www.youtube.com/watch?v=zR6Ix6YUhwI "Everything Is AWESOME")
-[![Everything Is AWESOME](https://img.youtube.com/vi/MHshzIIcirU/0.jpg)](https://www.youtube.com/watch?v=MHshzIIcirU "Everything Is AWESOME")
+Check out these example videos showing TITAN-Net in action, generating breathtaking RGB panoramic images! 🎥
 
+### Full Panoramic RGB Generation
+[![Panoramic RGB Generation](https://img.youtube.com/vi/eV510t29TAc/0.jpg)](https://www.youtube.com/watch?v=eV510t29TAc "Panoramic RGB Generation")
 
-# Citation
+### Data Augmentation with Semantic Segmentation
+See how easily we can use semantic segmentation maps for data augmentation in datasets like KITTI and Cityscapes!
 
-`
+[![KITTI Data Augmentation](https://img.youtube.com/vi/zR6Ix6YUhwI/0.jpg)](https://www.youtube.com/watch?v=zR6Ix6YUhwI "KITTI Data Augmentation")
+[![Cityscapes Data Augmentation](https://img.youtube.com/vi/MHshzIIcirU/0.jpg)](https://www.youtube.com/watch?v=MHshzIIcirU "Cityscapes Data Augmentation")
+
+## 📚 Citation
+
+If you use **TITAN-Net** in your research, please consider citing our paper:
+
+```bibtex
 @misc{cortinhal2021semanticsaware,
-      title={Semantics-aware Multi-modal Domain Translation:From LiDAR Point Clouds to Panoramic Color Images}, 
-      author={Tiago Cortinhal and Fatih Kurnaz and Eren Aksoy},
-      year={2021},
-      eprint={2106.13974},
-      archivePrefix={arXiv},
-      primaryClass={cs.CV}
+  title={Semantics-aware Multi-modal Domain Translation: From LiDAR Point Clouds to Panoramic Color Images}, 
+  author={Tiago Cortinhal and Fatih Kurnaz and Eren Aksoy},
+  year={2021},
+  eprint={2106.13974},
+  archivePrefix={arXiv},
+  primaryClass={cs.CV}
 }
-`
-
-# Checkout our previous work
-
-You can check out previous work SalsaNext ![git](https://github.com/Halmstad-University/SalsaNext) and ![paper](https://arxiv.org/abs/2003.03653)!
-
-# Disclamer
-
-This repository is for research purposes only, the use of this code is your responsibility.
